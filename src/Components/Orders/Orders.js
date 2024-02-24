@@ -62,7 +62,7 @@ export default function Orders() {
                    
                 </div>
             ) : (
-                <div style={{color:'#f5f8f0', fontSize:'15px', fontWeight:600, margin:'auto'}}><Loader/></div>
+                <div style={{color:'#f5f8f0', fontSize:'15px', fontWeight:600, margin:'auto'}}>Loading...</div>
             )}
         </>
     );

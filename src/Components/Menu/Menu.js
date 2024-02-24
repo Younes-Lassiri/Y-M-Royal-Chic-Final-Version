@@ -128,9 +128,9 @@ export default function Menu(props) {
               {filtredProducts.map(function(product){
                 return(
                   <div className='col-3' style={{display:'flex', alignItems:'center', gap:'15px', padding:'20px 0 0 0'}}>
-                      <Link to={`/product/${product.name}`}><div style={{backgroundImage:`url(${product.thumbnail})`, width:'80px', height:'80px', backgroundPosition:'center', backgroundSize:'cover'}}></div></Link>
+                      <Link to={`/product/${product.name.split(' ').join('-')}`}><div style={{backgroundImage:`url(${product.thumbnail})`, width:'80px', height:'80px', backgroundPosition:'center', backgroundSize:'cover'}}></div></Link>
                       <div style={{display:'flex', flexDirection:'column', gap:'5px'}}>
-                      <Link className='searchLink' to={`/product/${product.name}`}><span>{product.name}</span></Link>
+                      <Link className='searchLink' to={`/product/${product.name.split(' ').join('-')}`}><span>{product.name}</span></Link>
                       <div style={{display:'flex', gap:'7px'}}>
                       {product.promo? <span style={{color:'727272', fontSize:'16px', fontFamily:'"EB Garamond",serif', textDecoration:'line-through'}}>${product.oldPrice}</span> : null}
                       <span style={{color:'727272', fontSize:'16px', fontFamily:'"EB Garamond",serif'}}>${product.price}</span>

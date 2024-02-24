@@ -136,7 +136,7 @@ useEffect(() => {
 }, [name]);
 
 
-  const product = products.find((product) => product.name === name);
+  const product = products.find((product) => product.name === name.split('-').join(' '));
 
   useEffect(() => {
     if (product) {
@@ -152,11 +152,11 @@ useEffect(() => {
 
 
   useEffect(() => {
-    effect(); // Invoke the effect function when the component mounts
+    effect(); 
   }, [product]);
 
   if (!product) {
-    return <div>Loading...</div>; // Placeholder for when product is not available yet
+    return <div>Loading...</div>;
   }
 
 
@@ -240,7 +240,6 @@ useEffect(() => {
         const data = await response.json();
         console.log('Review sent successfully:', data);
 
-        // Show success message using toast notification
         toast.success("Thank you for your review! Your review has been sent successfully.", {
             position: "top-center",
             autoClose: 2000,
@@ -256,7 +255,6 @@ useEffect(() => {
 
     } catch (error) {
         console.error('Error adding order:', error);
-        // Handle error - you can display an error message to the user
     }
 };
 
@@ -641,7 +639,7 @@ function addToCart(){
           <div className="col-12 col-sm-6 col-md-4 col-lg-3 carde" key={index} title={productRela.name}>
             
             <img src={productRela.thumbnail} alt="" />
-            <Link to={`/product/${productRela.name}`}><div className="price">${productRela.price}</div></Link>
+            <Link to={`/product/${productRela.name.split(' ').join('-')}`}><div className="price">${productRela.price}</div></Link>
             
             
 
@@ -657,7 +655,7 @@ function addToCart(){
 
 
 
-            <div className="name"><Link to={`/product/${productRela.name}`}>{productRela.name}</Link></div>
+            <div className="name"><Link to={`/product/${productRela.name.split(' ').join('-')}`}>{productRela.name}</Link></div>
             {productRela.isNew ? <div className='new'>NEW</div> : null}
             {productRela.promo ? (
   <>
@@ -667,7 +665,7 @@ function addToCart(){
 ) : null}
             {productRela.sold ? <div className='sold'>SOLD</div> : null}
 
-            <Link to={`/product/${productRela.name}`}><div className='add'></div></Link>
+            <Link to={`/product/${productRela.name.split(' ').join('-')}`}><div className='add'></div></Link>
           </div>
           
         ))}

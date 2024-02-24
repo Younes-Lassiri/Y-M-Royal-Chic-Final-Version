@@ -137,7 +137,7 @@ export default function Collection() {
 ) : null}
             {product.sold ? <div className='sold'>SOLD OUT</div> : null}
 
-            <Link to={`/product/${product.name}`}><div className='add'></div></Link>
+            <Link to={`/product/${product.name.split(' ').join('-')}`}><div className='add'></div></Link>
           </div>
           
         ))}

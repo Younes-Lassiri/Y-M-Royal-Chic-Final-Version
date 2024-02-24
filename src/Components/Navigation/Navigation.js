@@ -21,6 +21,7 @@ import Loader from '../Loader/Loader';
 import ThirdSec from '../ThirdSec/ThirdSec';
 import OurHistory from '../OurHistory/OurHistory';
 import Blogs from '../Blogs/Blogs';
+import SingleBolg from '../SingleBolg/SingleBolg';
 
 export default function Navigation() {
   return (
@@ -57,7 +58,10 @@ export default function Navigation() {
         <Route path="/our-history" element={<OurHistory/>} />
 
 
-        <Route path="/loader" element={<Loader/>} />
+
+
+
+        <Route path="/blog/:blogTitle" element={<SingleBolg/>} />
 
 
 

@@ -44,7 +44,7 @@ export default function Messages() {
     return (
         <>
             {loading ? (
-                <div style={{color:'#f5f8f0', fontSize:'20px', fontWeight:600, margin:'auto'}}>Loading...</div> // Show loading message while data is being fetched
+                <div style={{color:'#f5f8f0', fontSize:'20px', fontWeight:600, margin:'auto'}}>Loading...</div>
             ) : messages.length > 0 ? (
                 <div className='noti-section container'>
                     <div className='row'>

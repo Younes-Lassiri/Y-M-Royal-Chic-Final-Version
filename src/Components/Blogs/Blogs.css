@@ -14,6 +14,36 @@
 }
 
 
+
+.readMore::before{
+    content: "";
+    width: 7%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #2e2e2d;
+    transition: .6s;
+}
+
+.readMore:hover::before{
+    width: 13%;
+}
+
+.readMore{
+    color: #2e2e2d;
+    font-family: Montserrat,sans-serif;
+    font-size: 11px;
+    letter-spacing: .22em;
+    line-height: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 34px;
+    position: relative;
+}
+
+
 .blogImgParent a:hover{
     color: #967844;
 }

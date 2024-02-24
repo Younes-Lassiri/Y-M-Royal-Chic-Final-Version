@@ -1,6 +1,16 @@
 import { FETCH_DATA, ADD_TO, ADD_WISH_PRODUCT, REMOVE_WISH_PRODUCT, ADD_TO_CART, REMOVE_CART, ADD_QUANTITE, MINUCE_QUANTITE, REMOVE_TRASH, VIEW_PRODUCT, HIDE_VIEW, ADD_SINGLE_QUANTITE, MINUCE_SINGLE_QUANTITE, ADD_REVIEW } from "../actions/actions";
-
-const ShopReducer = (state = { products: [], wishProductQuantite: 0, cart: [], cartProductQuantite:0,trash:[],viewed:false,viewedProduct:[]}, action) => {
+import blogPost1 from '../myImages/blog-post-1.jpg'
+import blogPost2 from '../myImages/blog-post-2.jpg'
+import blogPost3 from '../myImages/blog-post-3.jpg'
+import blogPost4 from '../myImages/blog-post-4.jpg'
+import blogPost5 from '../myImages/blog-post-5.jpg'
+import blogPost6 from '../myImages/blog-post-6.jpg'
+const ShopReducer = (state = { products: [], wishProductQuantite: 0, cart: [], cartProductQuantite:0,trash:[],viewed:false,viewedProduct:[], blogImages :[{src:blogPost1, title:"Keeping up with trends"},
+{src:blogPost2, title:"The most unusal show"},
+{src:blogPost3, title:"Fashion news we need"},
+{src:blogPost4, title:"Just style and confidence"},
+{src:blogPost5, title:"Follow our fresh design"},
+{src:blogPost6, title:"About my fashion line"}]}, action) => {
   switch (action.type) {
     case FETCH_DATA:
       return { ...state, products: action.payload };

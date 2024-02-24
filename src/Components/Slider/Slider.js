@@ -124,7 +124,7 @@ export default function Sliderr() {
           <div className="cardee" key={index} title={product.name}> 
             
             <img src={product.thumbnail} alt="" />
-           <Link to={`/product/${product.name}`}><div className="pricee">${product.price}</div></Link>
+           <Link to={`/product/${product.name.split(' ').join('-')}`}><div className="pricee">${product.price}</div></Link>
             
             
 
@@ -149,7 +149,7 @@ export default function Sliderr() {
   </>
 ) : null}
             {product.sold ? <div className='sold'>SOLD</div> : null}
-            <Link to={`/product/${product.name}`}><div className='add'></div></Link>
+            <Link to={`/product/${product.name.split(' ').join('-')}`}><div className='add'></div></Link>
           </div>
           
         ))}

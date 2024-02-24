@@ -56,7 +56,11 @@ pool.getConnection((err, connection) => {
   connection.release();
 });
 
-// Route to handle user login
+
+
+
+
+
 app.post('/api/login', (req, res, next) => {
   const { email, password } = req.body;
   const sql = 'SELECT * FROM users WHERE email = ? AND password = ?';
@@ -73,7 +77,9 @@ app.post('/api/login', (req, res, next) => {
   });
 });
 
-// Route to get all users
+
+
+
 app.get('/api/users', (req, res, next) => {
   const sql = 'SELECT * FROM users';
   pool.query(sql, (error, results, fields) => {
@@ -85,7 +91,10 @@ app.get('/api/users', (req, res, next) => {
   });
 });
 
-// Route to create a new user
+
+
+
+
 app.post('/api/users', (req, res, next) => {
   const { name, email, password } = req.body;
   const userId = uuidv4();
@@ -99,7 +108,10 @@ app.post('/api/users', (req, res, next) => {
   });
 });
 
-// Route to handle settings
+
+
+
+
 app.get('/api/settings', (req, res, next) => {
   const sql = 'SELECT display FROM settings LIMIT 1';
   pool.query(sql, (error, results, fields) => {
@@ -115,7 +127,10 @@ app.get('/api/settings', (req, res, next) => {
   });
 });
 
-// Route to update display settings
+
+
+
+
 app.put('/api/settings', (req, res, next) => {
   const { display } = req.body;
   const sql = 'UPDATE settings SET display = ?';
@@ -128,7 +143,9 @@ app.put('/api/settings', (req, res, next) => {
   });
 });
 
-// Route to update user information
+
+
+
 app.put('/api/users', (req, res, next) => {
   const { oldEmail, newEmail, name, password } = req.body;
   const sql = 'UPDATE users SET email = ?, name = ?, password = ? WHERE email = ?';
@@ -145,7 +162,9 @@ app.put('/api/users', (req, res, next) => {
   });
 });
 
-// Route to add orders
+
+
+
 app.post('/api/orders', (req, res, next) => {
   const { clientName, clientContact, clientTotalPaid, clientItems, clientPayMethod } = req.body;
   const sql = 'INSERT INTO orders (clientName, clientContact, clientTotalPaid, clientItems, clientPayMethod) VALUES (?, ?, ?, ?, ?)';
@@ -158,7 +177,9 @@ app.post('/api/orders', (req, res, next) => {
   });
 });
 
-// Route to fetch all orders
+
+
+
 app.get('/api/orders', (req, res, next) => {
   const sql = 'SELECT * FROM orders';
   pool.query(sql, (error, results, fields) => {
@@ -170,7 +191,11 @@ app.get('/api/orders', (req, res, next) => {
   });
 });
 
-// Route to add messages
+
+
+
+
+
 app.post('/api/messages', (req, res, next) => {
   const { userName, userEmail, contactMessage } = req.body;
   const sql = 'INSERT INTO messages (userName, userEmail, contactMessage) VALUES (?, ?, ?)';
@@ -183,7 +208,11 @@ app.post('/api/messages', (req, res, next) => {
   });
 });
 
-// Route to fetch all messages
+
+
+
+
+
 app.get('/api/messages', (req, res, next) => {
   const sql = 'SELECT * FROM messages';
   pool.query(sql, (error, results, fields) => {
@@ -198,7 +227,9 @@ app.get('/api/messages', (req, res, next) => {
 
 
 
-// Route to get all products
+
+
+
 app.get('/api/products', (req, res, next) => {
   const sql = 'SELECT * FROM products';
   pool.query(sql, (error, results, fields) => {
@@ -210,7 +241,9 @@ app.get('/api/products', (req, res, next) => {
   });
 });
 
-// Route to create a new product
+
+
+
 app.post('/api/products', (req, res, next) => {
   const { name, thumbnail, price, isNew, sold, promo, oldPrice, promoValue, wish, quantite } = req.body;
   const sql = 'INSERT INTO products (name, thumbnail, price, isNew, sold, promo, oldPrice, promoValue, wish, quantite) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
@@ -231,7 +264,6 @@ app.post('/api/products', (req, res, next) => {
 
 
 
-// Route to get all reviews
 app.get('/api/reviews', (req, res, next) => {
   const sql = 'SELECT * FROM reviews';
   pool.query(sql, (error, results, fields) => {
@@ -243,7 +275,8 @@ app.get('/api/reviews', (req, res, next) => {
   });
 });
 
-// Route to create a new review
+
+
 app.post('/api/reviews', (req, res, next) => {
   const { productId, clientName, reviewContent, rateValue } = req.body;
   const sql = 'INSERT INTO reviews (productId, clientName, reviewContent, rateValue) VALUES (?, ?, ?, ?)';
@@ -259,7 +292,6 @@ app.post('/api/reviews', (req, res, next) => {
 
 
 
-// Route to delete a product by ID
 app.delete('/api/products', (req, res, next) => {
   const productId = req.body.id;
   if (!productId) {
@@ -281,10 +313,10 @@ app.delete('/api/products', (req, res, next) => {
 
 
 
-//Mohamed  Back end
 
 
-// Route to create a new admins
+
+
 app.post('/api/admins', (req, res, next) => {
   const { name, email, password } = req.body;
   const sql = 'INSERT INTO admins (name, email, password) VALUES (?, ?, ?)';
@@ -299,7 +331,9 @@ app.post('/api/admins', (req, res, next) => {
 
 
 
-// Route to handle admin login
+
+
+
 app.post('/api/adminLogin', (req, res, next) => {
   const { email, password } = req.body;
   const sql = 'SELECT * FROM admins WHERE email = ? AND password = ?';
