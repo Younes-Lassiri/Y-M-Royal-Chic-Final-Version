@@ -1,0 +1,112 @@
+
+
+
+.roww{
+    width: 100%;
+}
+
+.roww .myImg{
+    height: 77%;
+    width: 90%;
+    float: left;
+}
+
+.roww .myImgg{
+    width: 57%;
+    height: 52%;
+    float: right;
+}
+
+
+@media screen and (max-width: 767px) {
+    .roww .myImg{
+        margin-left: 15px;
+        
+    }
+    .roww .myImgg{
+        width: 90%;
+        height: 100%;
+        margin-left: 14%;
+        float: left;
+        padding-top: 50%;
+
+
+    }
+    .fafa1 h6{
+    
+        margin-left: 15px;
+    }
+    
+    
+    .fafa1 hr{
+        margin-left: 15px;
+    
+    }
+
+    .fafa2 h6{
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    
+}
+
+
+.fafa1 h6{
+    width: 90%;
+    float: left;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #2e2e2d;
+    font-family: "EB Garamond",serif;
+    font-size: 19px;
+    transition: .7s;
+    font-weight: 100;
+
+}
+.fafa1 h6:hover{
+    color: #967844;
+}
+
+
+.fafa1 span{
+    float: right;
+    color: #727272;
+    font-size: 17px;
+}
+.fafa1 hr{
+    width: 90%;
+
+}
+
+
+.fafa2 h6{
+    width: 57%;
+    float: right;
+    padding-top: 10px;
+    cursor: pointer;
+    color: #2e2e2d;
+    font-family: "EB Garamond",serif;
+    font-size: 19px;
+    transition: .7s;
+    font-weight: 100;
+}
+
+.fafa2 h6 span{
+    cursor: text;
+}
+.fafa1 h6 span{
+    cursor: text;
+}
+
+.fafa2 h6:hover{
+    color: #967844;
+}
+
+
+.fafa2 span{
+    float: right;
+    color: #727272;
+    font-size: 17px;
+}

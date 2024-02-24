@@ -1,0 +1,49 @@
+.order-section{
+    max-height: calc(100vh - 150px);
+    overflow-y: scroll;
+}
+
+tr:last-of-type td {
+    border-bottom: none;
+}
+
+
+.order-section table{
+    width: 100%;
+}
+
+
+
+
+
+.order-section table tr th{
+    padding: 9px 20px;
+    border: 1px solid #d4d4d4;
+    color: #1d1e20;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: DM Sans,Roboto,sans-serif;
+}
+
+.order-section table tr td{
+    padding: 25px 20px;
+    color: #1d1e20;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.btn-danget{
+    background-color: rgba(165, 155, 255, 0.164);
+    border-radius: 5px;
+    color: rgb(14, 14, 252);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: italic;
+    border: none;
+}
+
+tr:last-of-type td {
+    border-bottom: none;
+}
+
+
+

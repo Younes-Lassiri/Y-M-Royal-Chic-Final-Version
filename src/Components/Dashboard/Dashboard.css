@@ -1,0 +1,43 @@
+
+.dashboard-section table{
+    width: 100%;
+}
+
+.dashboard-section table tr th{
+    padding: 9px 30px;
+    border: 1px solid #d4d4d4;
+    color: #1d1e20;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: DM Sans,Roboto,sans-serif;
+}
+
+.dashboard-section table tr td{
+    padding: 25px 30px;
+    color: #1d1e20;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.btn-danget{
+    background-color: rgba(165, 155, 255, 0.164);
+    padding: 2px 13px;
+    border-radius: 5px;
+    color: rgb(14, 14, 252);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: italic;
+}
+
+
+
+.message-div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #1d1e20;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: DM Sans,Roboto,sans-serif;
+    padding: 12.5px 10px;
+    border-bottom: 1px solid #d4d4d4;
+}

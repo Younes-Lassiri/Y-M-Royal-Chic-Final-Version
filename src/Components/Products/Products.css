@@ -1,0 +1,41 @@
+.products-section{
+    max-height: calc(100vh - 150px);
+    overflow-y: scroll;
+}
+
+tr:last-of-type td {
+    border-bottom: none;
+}
+
+
+.products-section table{
+    width: 100%;
+}
+
+
+
+
+
+.products-section table tr th{
+    padding: 9px 20px;
+    border: 1px solid #d4d4d4;
+    color: #1d1e20;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: DM Sans,Roboto,sans-serif;
+}
+
+.products-section table tr td{
+    padding: 25px 20px;
+    color: #1d1e20;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+
+tr:last-of-type td {
+    border-bottom: none;
+}
+
+
+
+

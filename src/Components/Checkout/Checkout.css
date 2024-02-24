@@ -1,0 +1,189 @@
+
+
+
+
+.card {
+	width: 70rem;
+    height: 90vh;
+    margin: auto;
+    background: #E8E9E3;
+    position:center;
+    align-self: center;
+    border-radius: 1.5rem;
+    box-shadow: 4px 3px 20px #3535358c;
+    display:flex;
+    flex-direction: row;
+}
+
+.leftside {
+	width: 25rem;
+	border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    position: relative;
+}
+
+.product {
+    object-fit: cover;
+	width: 20em;
+    height: 20em;
+    border-radius: 100%;
+}
+
+.rightside {
+    background-color: white;
+	width: 45rem;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+}
+
+.inputbox
+{
+    color:#030303;
+	width: 100%;
+    padding: 0.3rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+    color: #000009;
+    font-size: 0.8rem;
+    font-weight: 500;
+  outline:none;
+  border-radius: 0;
+}
+
+.expcvv {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+
+.expcvv_text{
+    padding-right: 1rem;
+}
+.expcvv_text2{
+    padding:0 1rem;
+}
+
+.checkoutBtn{
+    background-color: #000009;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width:100%;
+    letter-spacing: .11rem;
+    outline:none;
+    border-radius: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        flex-direction: column;
+        width: auto;
+      
+    }
+
+    .leftside{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+      border-top-right-radius:0;
+      border-radius:0;
+    }
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 2rem 2rem 1rem;
+      border-radius:0;
+    }
+}
+
+.inputbox{
+    background-color: transparent;
+}
+
+.inputbox:focus{
+    border-bottom: 1.5px solid #ccc;
+}
+
+
+
+#checkout-text{
+    color: #963E7B;
+}
+
+
+
+.check-name{
+    margin-top: -60px;
+    color: #000009;
+    font-size: 22px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+}
+
+
+.check-price{
+    color: #000009;
+    font-size: 17px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+}
+
+
+.check-desc{
+    color: #000009;
+    font-size: 13px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+}
+
+.terms-text{
+    color: #000009;
+    font-size: 13px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+}
+
+
+.prev-btn{
+    border: none;
+    font-size: 42px;
+    color: #000009;
+    background-color: transparent;
+    position: absolute;
+    top: 50%; 
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+
+.next-btn{
+    border: none;
+    font-size: 42px;
+    color: #000009;
+    background-color: transparent;
+    position: absolute;
+    top: 50%; 
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+
+.btn-disabled{
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
+

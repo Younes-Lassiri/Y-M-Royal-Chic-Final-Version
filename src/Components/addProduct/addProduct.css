@@ -1,0 +1,122 @@
+.radio {
+  display: block;
+  cursor: pointer; 
+  user-select: none;
+  text-align: left;
+}
+
+.radio + .radio {
+  margin-top: 12px;
+}
+
+.radio input {
+  display: none;
+}
+
+.radio input + span {
+  display: inline-block; 
+  position: relative;
+  padding-left: 30px;
+}
+
+.radio input + span:before {
+  content: '';
+  display: block; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.radio input + span:after {
+  content: '';
+  display: block; 
+  width: 10px;
+  height: 10px;
+  background: #000009;
+  position: absolute;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  opacity: 0;
+  transform: scale(0, 0); 
+  transition: all .2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+
+.radio input:checked + span:after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+
+#productName{
+  width: 100%;
+}
+
+
+#productPrice{
+  width: 100%;
+}
+
+
+
+
+
+/* Remove arrow controls from number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+}
+
+
+.addPro-form input::placeholder{
+  color: #000009;
+  opacity: 0.5
+
+}
+
+
+.addPro-form label{
+  padding: 18px 0
+}
+
+.addPro-form input{
+  color: #000009;
+
+}
+
+
+.addProduct-section{
+  padding: 0 33px;
+  position: relative
+}
+
+
+.add-pro-admin-btn{
+  width: 15%;
+  background: transparent; 
+  color: #000009;
+  border: 1px solid #000009;
+  transition: .7s,;
+  font-weight: 500;
+  padding: 10px 0;
+  letter-spacing: .20em;
+  font-size: 0.9rem;
+  border-radius: 0;
+  font-family: Source Serif Pro,serif;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+
+
+.add-pro-admin-btn:hover{
+  background: #000009; 
+  color: white;
+  border: none;
+}

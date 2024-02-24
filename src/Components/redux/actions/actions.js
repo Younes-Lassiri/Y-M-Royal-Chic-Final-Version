@@ -1,0 +1,31 @@
+export const FETCH_DATA = "FETCH_DATA";
+
+export const ADD_TO = "ADD_TO";
+
+export const ADD_WISH_PRODUCT = 'ADD_WISH_PRODUCT'
+
+export const REMOVE_WISH_PRODUCT = 'REMOVE_WISH_PRODUCT'
+
+
+export const ADD_TO_CART = 'ADD_TO_CART'
+
+export const REMOVE_CART = 'REMOVE_CART'
+
+export const ADD_QUANTITE = 'ADD_QUANTITE'
+
+export const MINUCE_QUANTITE = 'MINUCE_QUANTITE'
+
+export const REMOVE_TRASH = 'REMOVE_TRASH'
+
+export const VIEW_PRODUCT = 'VIEW_PRODUCT'
+
+export const HIDE_VIEW = 'HIDE_VIEW'
+
+
+export const ADD_SINGLE_QUANTITE = 'ADD_SINGLE_QUANTITE'
+
+
+export const MINUCE_SINGLE_QUANTITE = 'MINUCE_SINGLE_QUANTITE'
+
+
+export const ADD_REVIEW = 'ADD_REVIEW'

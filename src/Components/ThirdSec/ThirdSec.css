@@ -1,0 +1,114 @@
+.third-sec{
+    background-color: #f8f5f0;
+    width: 100%;
+    height: 72vh;
+    background-image: url('./myImages/h1-video-img-1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.thirdSection{
+    background-color: #f8f5f0;
+    padding-top: 120px;
+}
+
+
+
+
+.third-sec .play img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 700;
+}
+@media screen and (max-width: 767px) {
+    .issue{
+        padding-top: 100%;
+        background-color: #f8f5f0;
+    }
+    .third-sec{
+        height: 35vh;
+    }
+
+}
+
+.third-sec .old {
+    width: 160px;
+    height: 160px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    margin-left: -10px;
+    transition: .7s;
+}
+
+.third-sec .neww{
+    width: 180px;
+    height: 180px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 700;
+    margin-left: -10px;
+    transition: .7s;
+}
+
+
+.third-sec .neww img{
+    width: 88px;
+    height: 88px;
+    position: absolute;
+    left: 54%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.all:hover .old{
+    width: 180px;
+    height: 180px;
+}
+
+.all:hover .neww{
+    width: 160px;
+    height: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+.third-video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: videofadeIn 0.7s forwards ease-in alternate;
+    z-index: 30000;
+}
+
+@keyframes videofadeIn {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

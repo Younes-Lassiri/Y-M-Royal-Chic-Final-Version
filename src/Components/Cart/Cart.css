@@ -1,0 +1,209 @@
+.cart{
+    width: 100%;
+    background-color: #f8f5f0;
+    overflow: hidden;
+}
+body{
+    font-family: "Source Serif Pro",serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.63em;
+    color: #2e2e2d;
+}
+.cart .title h1{
+    font-family: "EB Garamond",serif;
+    font-weight: 400;
+    color: #2e2e2d;
+    font-size: 50px;
+    line-height: 1em;
+}
+
+.product-cart button{
+    color: #2e2e2d;
+    background-color: transparent;
+    border: none;
+    width: 18px;
+    height: 18px;
+    position: relative;
+}
+
+.product-cart button::before{
+    content: '';
+    width: 1px;
+    height: 15px;
+    background-color: #2e2e2d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    transition: .6s;
+
+}
+.product-cart button:hover::before{
+    background-color: #967844;
+}
+
+.product-cart button:hover::after{
+    background-color: #967844;
+}
+
+.product-cart button::after{
+    content: '';
+    width: 1px;
+    height: 15px;
+    background-color: #2e2e2d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    transition: .6s;
+}
+
+.all-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.product-cart{
+    display: flex;
+    gap: 25px;
+    height: 150px;
+    align-items: center;
+}
+.product-cart .cart-title{
+    font-size: 16px;
+    font-family: "Source Serif Pro",serif;
+    font-weight: 600;
+    line-height: 1.63em;
+}
+
+.product-cart img{
+    width: 42%;
+    height: 80%;
+}
+
+
+.cart-operation{
+    display: flex;
+    gap: 20px;
+}
+
+.cart-operation button{
+    color: #2e2e2d;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+.cart-operation .cart-name{
+    font-family: Montserrat,sans-serif;
+    font-size: 11px;
+    letter-spacing: .22em;
+    line-height: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+.cart-operation .cart-price{
+    font-family: "Source Serif Pro",serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.63em;
+    color: #727272;
+}
+
+
+
+.e button{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 11px;
+    letter-spacing: .22em;
+    line-height: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    transition: .8s;
+    margin-top: 30px;
+}
+
+.e button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.boton{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 11px;
+    letter-spacing: .22em;
+    line-height: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    transition: .8s;
+    margin: 30px auto;
+}
+
+.boton:hover{
+    background-color: black;
+    color: white;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .all-product{
+        gap: 15px;
+    }
+    .product-cart{
+        gap: 5px;
+    }
+    .all-product.product-cart .cart-title{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .cart-operation{
+        gap: 5px;
+    }
+    .cart-operation .cart-name{
+        letter-spacing: .18em;
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
+    .all-product{
+        gap: 20px;
+    }
+    .product-cart{
+        gap: 15px;
+    }.all-product
+    .product-cart .cart-title{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .cart-operation{
+        gap: 5px;
+    }
+    .cart-operation .cart-name{
+        letter-spacing: .18em;
+    }
+}
+  
+
+
+
+
+
+
+
+
+
+

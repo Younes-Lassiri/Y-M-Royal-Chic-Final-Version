@@ -1,0 +1,67 @@
+.first-sec {
+    background-color: #f8f5f0;
+}
+.two img{
+    height: 100vh;
+    width: 95%;
+
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 110px 0;
+}
+.two{
+    text-align: right;
+}
+.one p{
+    line-height: 30px;
+    color: #727272;
+}
+.one button{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 11px;
+    letter-spacing: .22em;
+    line-height: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    transition: .7s;
+    margin-top: 25px;
+}
+
+.one button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .two{
+        padding: 35px;
+        text-align: center;
+    }
+    .one{
+        padding: 0;
+    }
+.one p{
+    padding-left: 20px;
+}
+.one h1{
+    padding-left: 20px;
+}
+.one button{
+    margin-left: 20px;
+}
+.two img{
+    width: 100%;}
+  }
+
+
+
+  .ourBi{
+    margin-top: 80px;
+  }

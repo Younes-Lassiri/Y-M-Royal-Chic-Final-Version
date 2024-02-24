@@ -1,0 +1,120 @@
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    background-color: #000009;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.2s forwards ease-in alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.parent > * {
+    animation: fadeIn 0.5s forwards ease-in alternate;
+}
+input::placeholder{
+    color: #495057;
+    font-size: 14px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+input{
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    background-color: #283341;
+    color: white;
+    font-size: 14px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus{
+    border: 1px solid white;
+}
+
+.logoo{
+    color: white;
+}
+
+
+label{
+    padding: 15px 0;
+    color: #ACB5BD;
+    font-size: 14px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1;
+}
+
+.botonaSubmit{
+    background-color: #6765E8;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 10px;
+    transition: .7s;
+    border: none;
+    font-size: 14px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1;
+
+}
+
+.check{
+    font-size: 14px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+.error-message{
+    color: rgb(182, 0, 0);
+    font-size: 14px;
+    font-family: Open Sans,-apple-system,"Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    
+}
+
+.passwordInput{
+    width: 80%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.disable{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    background-color: #283341;
+    width: 20%;
+    cursor: pointer;
+}
+
+
+
+/* Increase specificity to override existing styles */
+input.success {
+    border: 1px solid rgb(45, 255, 62) !important;
+}
+
+input.failed {
+    border: 1px solid rgb(255, 45, 45) !important;
+}
+
+
+

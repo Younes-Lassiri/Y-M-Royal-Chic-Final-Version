@@ -1,0 +1,27 @@
+.noti-section{
+    width: 99%;
+    padding: 10px 10px;
+    position: relative;
+    
+    max-height: calc(100vh - 155px);
+    overflow-y: scroll;
+}
+
+.noti-section table{
+    width: 100%;
+}
+
+.noti-section table tr th{
+    padding: 9px 30px;
+    border: 1px solid #d4d4d4;
+    color: #1d1e20;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: DM Sans,Roboto,sans-serif;
+}
+
+.noti-section table tr td{
+    padding: 25px 30px;
+    color: #1d1e20;
+    border-bottom: 1px solid #d4d4d4;
+}
