@@ -19,7 +19,6 @@ const [newPassword, setNewPassword] = useState('')
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          // Update display
           const displayResponse = await fetch('https://royalchicapi-cc1c56c683bf.herokuapp.com/api/settings', {
             method: 'PUT',
             headers: {
@@ -28,7 +27,6 @@ const [newPassword, setNewPassword] = useState('')
             body: JSON.stringify({ display: itemDisplay }),
           });
     
-          // Update user
           const userResponse = await fetch(`https://royalchicapi-cc1c56c683bf.herokuapp.com/api/users`, {
             method: 'PUT',
             headers: {
@@ -42,7 +40,6 @@ const [newPassword, setNewPassword] = useState('')
             }),
           });
     
-          // Check response status for both fetch requests
           if (displayResponse.ok || userResponse.ok) {
             toast.success('Settings and user information updated successfully');
           } else {
@@ -76,7 +73,7 @@ function toDashbord(){
                             <label className='settingLabel'>Full Name</label>
                         </div>
                         <div className='col-7'>
-                            <input type='text' placeholder={props.user.name} className='settingInput' onChange={(e) => setNewName(e.target.value)}/>
+                            <input style={{background:'#e9eae4', color: '#999898', border:'none', padding:'19px 19px'}} type='text' className='settingInput' onChange={(e) => setNewName(e.target.value)}/>
                         </div>
                     </div>
 
@@ -86,7 +83,7 @@ function toDashbord(){
                             <label className='settingLabel'>Email</label>
                         </div>
                         <div className='col-7'>
-                            <input type='text' placeholder={props.user.email} className='settingInput' onChange={(e) => setNewEmail(e.target.value)}/>
+                            <input style={{background:'#e9eae4', color: '#999898', border:'none', padding:'19px 19px'}} type='text' className='settingInput' onChange={(e) => setNewEmail(e.target.value)}/>
                         </div>
                     </div>
 
@@ -96,17 +93,17 @@ function toDashbord(){
                             <label className='settingLabel'>Password</label>
                         </div>
                         <div className='col-7'>
-                            <input type='password' placeholder={props.user.password} className='settingInput' onChange={(e) => setNewPassword(e.target.value)}/>
+                            <input  style={{background:'#e9eae4', color: '#999898', border:'none', padding:'19px 19px'}}type='password' className='settingInput' onChange={(e) => setNewPassword(e.target.value)}/>
                         </div>
                     </div>
 
 
-                    <div className='row' style={{padding:'30px 0'}}>
+                    <div className='row' style={{padding:'80px 0'}}>
                         <div className='col-5'>
                             <label className='settingLabel'>Collection Items Number</label>
                         </div>
                         <div className='col-7'>
-                            <input type='number' className='settingInput' placeholder='How many items you want to show' onChange={(e) => setItemDisplay(e.target.value)}/>
+                            <input style={{background:'#e9eae4', color: '#999898', border:'none', padding:'19px 19px'}} type='number' className='settingInput' onChange={(e) => setItemDisplay(e.target.value)}/>
                         </div>
                     </div>
 
